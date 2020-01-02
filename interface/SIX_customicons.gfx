@@ -1,0 +1,31 @@
+spriteTypes = { 
+##Icon For: 1790291
+ SpriteType = { 
+ name = "GFX_herdingandfarming" 
+ texturefile = "gfx/interface/goals/GFX_herdingandfarming.tga" 
+ }##Icon For: 1790286
+ SpriteType = { 
+ name = "GFX_compromises" 
+ texturefile = "gfx/interface/goals/GFX_compromises.tga" 
+ }##Icon For: 1790268
+ SpriteType = { 
+ name = "GFX_tribalmilitary" 
+ texturefile = "gfx/interface/goals/GFX_tribalmilitary.tga" 
+ }##Icon For: 1790274
+ SpriteType = { 
+ name = "GFX_thewayofthehunter" 
+ texturefile = "gfx/interface/goals/GFX_thewayofthehunter.tga" 
+ }##Icon For: 1790275
+ SpriteType = { 
+ name = "GFX_thewayofthehorse" 
+ texturefile = "gfx/interface/goals/GFX_thewayofthehorse.tga" 
+ }##Icon For: 1790278
+ SpriteType = { 
+ name = "GFX_tradefurformuskets" 
+ texturefile = "gfx/interface/goals/GFX_tradefurformuskets.tga" 
+ }##Icon For: 1790281
+ SpriteType = { 
+ name = "GFX_intertribalpolitics" 
+ texturefile = "gfx/interface/goals/GFX_intertribalpolitics.tga" 
+ } 
+ }

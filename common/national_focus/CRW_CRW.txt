@@ -1,0 +1,720 @@
+focus_tree = {
+	id = CRW
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRW
+		}
+	}
+	#Focus for United Brothers
+	focus = {
+		id = CRW_unitedbrothers
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_mendingpastgrievances }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= united_brothers
+		}
+	}
+
+	#Focus for Tribal Relations
+	focus = {
+		id = CRW_tribalrelations
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_outsidepolitics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_political_power= 25
+		}
+	}
+
+	#Focus for Adopt New Ideas
+	focus = {
+		id = CRW_adoptnewideas
+		icon = GFX_focus_research2
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_learnmore }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= CRW_newwaysofliving
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Raiding Rival Tribes
+	focus = {
+		id = CRW_raidingrivaltribes
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tribalrelations }
+		mutually_exclusive = { focus = CRW_mendingpastgrievances }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.1
+		}
+	}
+
+	#Focus for Mending Past Grievances
+	focus = {
+		id = CRW_mendingpastgrievances
+		icon = GFX_goal_generic_improve_relations
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tribalrelations }
+		mutually_exclusive = { focus = CRW_raidingrivaltribes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for War Path
+	focus = {
+		id = CRW_warpath
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_raidingrivaltribes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= war_path
+		}
+	}
+
+	#Focus for Walking New Paths
+	focus = {
+		id = CRW_walkingnewpaths
+		icon = GFX_goal_generic_improve_relations
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_talktothereformists }
+		mutually_exclusive = { 
+			focus = CRW_keepingtheoldways 
+		}
+		mutually_exclusive = { 
+			focus = CRW_compromises 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 125
+		}
+	}
+
+	#Focus for New Ways?
+	focus = {
+		id = CRW_newways
+		icon = GFX_goal_generic_trade
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_keepingtheoldways 
+			focus = CRW_compromises 
+			focus = CRW_walkingnewpaths 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 35
+		}
+	}
+
+	#Focus for Hunting and Gathering
+	focus = {
+		id = CRW_huntingandgathering
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_newways }
+		mutually_exclusive = { focus = CRW_herdingandfarming }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= gathering
+		}
+	}
+
+	#Focus for One Nation
+	focus = {
+		id = CRW_onenation
+		icon = GFX_focus_generic_polish_deal
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_herdingandfarming 
+			focus = CRW_huntingandgathering 
+		}
+		mutually_exclusive = { focus = CRW_abandoftribes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= one_nation
+		}
+	}
+
+	#Focus for Old Ways of Living
+	focus = {
+		id = CRW_oldwaysofliving
+		icon = GFX_goal_tripartite_pact
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_abandoftribes 
+			focus = CRW_onenation 
+		}
+		mutually_exclusive = { 
+			focus = CRW_newwaysofliving 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= old_ways
+		}
+	}
+
+	#Focus for Outside Politics
+	focus = {
+		id = CRW_outsidepolitics
+		icon = GFX_goal_tripartite_pact
+		x = 17
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 35
+		}
+	}
+
+	#Focus for Herding and Farming
+	focus = {
+		id = CRW_herdingandfarming
+		icon = GFX_herdingandfarming
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_newways }
+		mutually_exclusive = { focus = CRW_huntingandgathering }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for A Band of Tribes
+	focus = {
+		id = CRW_abandoftribes
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_herdingandfarming 
+			focus = CRW_huntingandgathering 
+		}
+		mutually_exclusive = { 
+			focus = CRW_onenation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+
+add_stability= 0.05
+
+add_political_power= 50
+		}
+	}
+
+	#Focus for Keeping the Old Ways
+	focus = {
+		id = CRW_keepingtheoldways
+		icon = GFX_goal_generic_improve_relations
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_talktothetraditionalists }
+		mutually_exclusive = { 
+			focus = CRW_compromises 
+		}
+		mutually_exclusive = { 
+			focus = CRW_walkingnewpaths 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for Compromises
+	focus = {
+		id = CRW_compromises
+		icon = GFX_compromises
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_talktothetraditionalists 
+			focus = CRW_talktothereformists 
+		}
+		mutually_exclusive = { 
+			focus = CRW_keepingtheoldways 
+		}
+		mutually_exclusive = { 
+			focus = CRW_walkingnewpaths 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_political_power= 55
+		}
+	}
+
+	#Focus for Study the Foreigners Ways
+	focus = {
+		id = CRW_studytheforeignersways
+		icon = GFX_goal_continuous_research
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_contactwiththeforeigners }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = industrial_bonus
+bonus = 0.5
+uses = 1
+category = industry
+			}
+		}
+	}
+
+	#Focus for Learn more?
+	focus = {
+		id = CRW_learnmore
+		icon = GFX_goal_generic_improve_relations
+		x = 19
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_studytheforeignersways 
+		}
+		prerequisite = { 
+			focus = CRW_tradesuppliesfortrinkets 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 35
+		}
+	}
+
+	#Focus for Tribal Military
+	focus = {
+		id = CRW_tribalmilitary
+		icon = GFX_tribalmilitary
+		x = 4
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 15
+		}
+	}
+
+	#Focus for A United Army
+	focus = {
+		id = CRW_aunitedarmy
+		icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tribalmilitary }
+		mutually_exclusive = { focus = CRW_raidingbands }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= centralized_military
+		}
+	}
+
+	#Focus for Past Traditions
+	focus = {
+		id = CRW_pasttraditions
+		icon = GFX_goal_continuous_increase_nu
+		x = 3
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_raidingbands 
+			focus = CRW_aunitedarmy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 15
+		}
+	}
+
+	#Focus for The Way of the Hunter
+	focus = {
+		id = CRW_thewayofthehunter
+		icon = GFX_thewayofthehunter
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_pasttraditions }
+		mutually_exclusive = { focus = CRW_thewayofthehorse }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= hunter
+		}
+	}
+
+	#Focus for The Way of the Horse
+	focus = {
+		id = CRW_thewayofthehorse
+		icon = GFX_thewayofthehorse
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_pasttraditions }
+		mutually_exclusive = { focus = CRW_thewayofthehunter }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= horse
+		}
+	}
+
+	#Focus for A Warrior's Spirit
+	focus = {
+		id = CRW_awarriorsspirit
+		icon = GFX_goal_generic_small_arms
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_thewayofthehunter 
+			focus = CRW_thewayofthehorse 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.1
+		}
+	}
+
+	#Focus for Trade Fur for Muskets
+	focus = {
+		id = CRW_tradefurformuskets
+		icon = GFX_tradefurformuskets
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tribalmilitary }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+ type = musket_equipment_0 
+amount = 250
+producer = ROOT
+}
+
+add_political_power= -50
+		}
+	}
+
+	#Focus for Learn the Foreign Way of War
+	focus = {
+		id = CRW_learntheforeignwayofwar
+		icon = GFX_goal_generic_position_armies
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tradefurformuskets }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Raiding Bands
+	focus = {
+		id = CRW_raidingbands
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_tribalmilitary }
+		mutually_exclusive = { focus = CRW_aunitedarmy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= decentralized_military
+		}
+	}
+
+	#Focus for Inter-Tribal Politics
+	focus = {
+		id = CRW_intertribalpolitics
+		icon = GFX_intertribalpolitics
+		x = 10
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 35
+		}
+	}
+
+	#Focus for Talk to the Traditionalists
+	focus = {
+		id = CRW_talktothetraditionalists
+		icon = GFX_goal_tripartite_pact
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_intertribalpolitics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for Talk to the Reformists
+	focus = {
+		id = CRW_talktothereformists
+		icon = GFX_goal_tripartite_pact
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_intertribalpolitics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for New Ways of Living
+	focus = {
+		id = CRW_newwaysofliving
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRW_abandoftribes 
+			focus = CRW_onenation 
+		}
+		mutually_exclusive = { focus = CRW_oldwaysofliving }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Contact with the Foreigners
+	focus = {
+		id = CRW_contactwiththeforeigners
+		icon = GFX_goal_generic_major_alliance
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_outsidepolitics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 35
+		}
+	}
+
+	#Focus for Trade Supplies for Trinkets
+	focus = {
+		id = CRW_tradesuppliesfortrinkets
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CRW_contactwiththeforeigners }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_political_power= 35
+		}
+	}
+
+#End of focuses 
+ }
