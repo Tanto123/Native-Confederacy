@@ -1,0 +1,3 @@
+category_territorial_integration = {
+	icon = border_war
+}
