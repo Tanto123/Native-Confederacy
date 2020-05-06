@@ -4,9 +4,9 @@ tags={
 	"Alternative History"
 	"Gameplay"
 }
-name="AEIOU Sub-Mod Plains Indians Nations Generic Focus Tree"
+name="AEIOU Sub-Mod Plains Indians Confederacy"
 dependencies={
-	"A.E.I.O.U. 1886"
+	"A.E.I.O.U. 1886 - Dev Version"
 }
 picture="thumbnail.jpg"
 supported_version="1.8.1"

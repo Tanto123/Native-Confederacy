@@ -1,17 +1,17 @@
 category_territorial_integration = {
 
-	SIX_decision_integrate_Ojibwe = {
+	SRC_decision_integrate_Ojibwe = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
                 }
 		available = {
-		SIX = { owns_state = 391 }
+		SRC = { owns_state = 391 }
 		}
 		
 		cost = 25
@@ -26,18 +26,18 @@ category_territorial_integration = {
 		}
 	}
  
- 	SIX_decision_integrate_Saulteaux = {
+ 	SRC_decision_integrate_Saulteaux = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 390 }
+		SRC = { owns_state = 390 }
 		}
 		
 		cost = 25
@@ -52,19 +52,19 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Sarcee = {
+ 	SRC_decision_integrate_Sioux = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 			NOT = { owns_state = 894 }
 		}
 		available = {
-		SIX = { owns_state = 894 }
+		SRC = { owns_state = 894 }
 		}
 		
 		cost = 25
@@ -79,18 +79,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Hidatsa = {
+ 	SRC_decision_integrate_Hidatsa = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 893 }
+		SRC = { owns_state = 893 }
 		}
 		
 		cost = 25
@@ -105,18 +105,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Pawnee = {
+ 	SRC_decision_integrate_Pawnee = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 892 }
+		SRC = { owns_state = 892 }
 		}
 		
 		cost = 25
@@ -131,18 +131,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Cheyenne = {
+ 	SRC_decision_integrate_Cheyenne = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 381 }
+		SRC = { owns_state = 381 }
 		}
 		
 		cost = 25
@@ -157,18 +157,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Crow = {
+ 	SRC_decision_integrate_Crow = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 884 }
+		SRC = { owns_state = 884 }
 		}
 		
 		cost = 25
@@ -183,18 +183,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Shoshone = {
+ 	SRC_decision_integrate_Shoshone = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 876 }
+		SRC = { owns_state = 876 }
 		}
 		
 		cost = 25
@@ -209,19 +209,19 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Arapaho = {
+ 	SRC_decision_integrate_Arapaho = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 875 } 
-                SIX = { owns_state = 874 }
+		SRC = { owns_state = 875 } 
+                SRC = { owns_state = 874 }
                 }
 		
 		
@@ -238,20 +238,20 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Comancheria = {
+ 	SRC_decision_integrate_Comancheria = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 873 } 
-                SIX = { owns_state = 871 } 
-                SIX = { owns_state = 872 }
+		SRC = { owns_state = 873 } 
+                SRC = { owns_state = 871 } 
+                SRC = { owns_state = 872 }
 		}
 		
 		cost = 25
@@ -268,18 +268,18 @@ category_territorial_integration = {
 		}
 	}
 
- 	SIX_decision_integrate_Osage = {
+ 	SRC_decision_integrate_Osage = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = SRC
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 382 }
+		SRC = { owns_state = 382 }
 		}
 		
 		cost = 25

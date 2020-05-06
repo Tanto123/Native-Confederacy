@@ -1,17 +1,17 @@
 category_territorial_integration = {
 
-	SIX_decision_integrate_Ojibwe = {
+	CRW_decision_integrate_Ojibwe = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
                 }
 		available = {
-		SIX = { owns_state = 391 }
+		CRW = { owns_state = 391 }
 		}
 		
 		cost = 25
@@ -26,18 +26,18 @@ category_territorial_integration = {
 		}
 	}
  
- 	SIX_decision_integrate_Saulteaux = {
+ 	CRW_decision_integrate_Saulteaux = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 390 }
+		CRW = { owns_state = 390 }
 		}
 		
 		cost = 25
@@ -52,19 +52,19 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Sarcee = {
+ 	CRW_decision_integrate_Sioux = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 			NOT = { owns_state = 894 }
 		}
 		available = {
-		SIX = { owns_state = 894 }
+		CRW = { owns_state = 894 }
 		}
 		
 		cost = 25
@@ -79,18 +79,44 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Hidatsa = {
+ 	CRW_decision_integrate_Sarcee = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 893 }
+		CRW = { owns_state = 894 }
+		}
+		
+		cost = 25
+		days_remove = 30
+		complete_effect {
+			add_state_core = 894	
+		}	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+ 	CRW_decision_integrate_Hidatsa = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = CRW
+		}
+
+		visible = {
+		}
+		available = {
+		CRW = { owns_state = 893 }
 		}
 		
 		cost = 25
@@ -105,18 +131,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Pawnee = {
+ 	CRW_decision_integrate_Pawnee = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 892 }
+		CRW = { owns_state = 892 }
 		}
 		
 		cost = 25
@@ -131,18 +157,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Cheyenne = {
+ 	CRW_decision_integrate_Cheyenne = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 381 }
+		CRW = { owns_state = 381 }
 		}
 		
 		cost = 25
@@ -157,44 +183,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Crow = {
+ 	CRW_decision_integrate_Shoshone = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 884 }
-		}
-		
-		cost = 25
-		days_remove = 30
-		complete_effect {
-			add_state_core = 884	
-		}	
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
- 	SIX_decision_integrate_Shoshone = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			original_tag = SIX
-		}
-
-		visible = {
-		}
-		available = {
-		SIX = { owns_state = 876 }
+		CRW = { owns_state = 876 }
 		}
 		
 		cost = 25
@@ -209,19 +209,19 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Arapaho = {
+ 	CRW_decision_integrate_Arapaho = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 875 } 
-                SIX = { owns_state = 874 }
+		CRW = { owns_state = 875 } 
+                CRW = { owns_state = 874 }
                 }
 		
 		
@@ -238,20 +238,20 @@ category_territorial_integration = {
 		}
 	}
 	
- 	SIX_decision_integrate_Comancheria = {
+ 	CRW_decision_integrate_Comancheria = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 873 } 
-                SIX = { owns_state = 871 } 
-                SIX = { owns_state = 872 }
+		CRW = { owns_state = 873 } 
+                CRW = { owns_state = 871 } 
+                CRW = { owns_state = 872 }
 		}
 		
 		cost = 25
@@ -268,18 +268,18 @@ category_territorial_integration = {
 		}
 	}
 
- 	SIX_decision_integrate_Osage = {
+ 	CRW_decision_integrate_Osage = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = SIX
+			original_tag = CRW
 		}
 
 		visible = {
 		}
 		available = {
-		SIX = { owns_state = 382 }
+		CRW = { owns_state = 382 }
 		}
 		
 		cost = 25

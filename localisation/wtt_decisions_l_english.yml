@@ -226,7 +226,7 @@
  
  
  ## Native code ##
- category_territorial_integration:0 "Category territorial integration"
+ category_territorial_integration:0 "Category Territorial Integration"
  category_territorial_integration_desc:0 "Category territorial integration"
  SIX_decision_integrate_Ojibwe:0 "Intergration of the Ojibwe tribe"
  SIX_decision_integrate_Ojibwe_desc:0 "We shall intergrate this fellow tribe"
@@ -246,5 +246,7 @@
  SIX_decision_integrate_Shoshone_desc:0 "We shall intergrate this fellow tribe"
  SIX_decision_integrate_Aprpaho:0 "Intergration of the Aprpaho tribe"
  SIX_decision_integrate_Aprpaho_desc:0 "We shall intergrate this fellow tribe"
- SIX_decision_integrate_Comancheri:0 "Intergration of the Comancheri tribe"
- SIX_decision_integrate_Comancheri_desc:0 "We shall intergrate this fellow tribe"
+ SIX_decision_integrate_Comancheria:0 "Intergration of the Comancheri tribe"
+ SIX_decision_integrate_Comancheria_desc:0 "We shall intergrate this fellow tribe"
+ SIX_decision_integrate_Osage:0 "Intergration of the Osage tribe"
+ SIX_decision_integrate_Osage_desc:0 "We shall intergrate this fellow tribe"
