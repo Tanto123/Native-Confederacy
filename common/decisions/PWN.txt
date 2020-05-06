@@ -1,17 +1,17 @@
 category_territorial_integration = {
 
-	APH_decision_integrate_Ojibwe = {
+	SIX_decision_integrate_Ojibwe = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
                 }
 		available = {
-		APH = { owns_state = 391 }
+		SIX = { owns_state = 391 }
 		}
 		
 		cost = 25
@@ -26,18 +26,18 @@ category_territorial_integration = {
 		}
 	}
  
- 	APH_decision_integrate_Saulteaux = {
+ 	SIX_decision_integrate_Saulteaux = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 390 }
+		SIX = { owns_state = 390 }
 		}
 		
 		cost = 25
@@ -52,19 +52,19 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Sioux = {
+ 	SIX_decision_integrate_Sarcee = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 			NOT = { owns_state = 894 }
 		}
 		available = {
-		APH = { owns_state = 894 }
+		SIX = { owns_state = 894 }
 		}
 		
 		cost = 25
@@ -79,44 +79,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Sarcee = {
+ 	SIX_decision_integrate_Hidatsa = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 894 }
-		}
-		
-		cost = 25
-		days_remove = 30
-		complete_effect {
-			add_state_core = 894	
-		}	
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
- 	APH_decision_integrate_Hidatsa = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			original_tag = APH
-		}
-
-		visible = {
-		}
-		available = {
-		APH = { owns_state = 893 }
+		SIX = { owns_state = 893 }
 		}
 		
 		cost = 25
@@ -131,18 +105,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Pawnee = {
+ 	SIX_decision_integrate_Pawnee = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 892 }
+		SIX = { owns_state = 892 }
 		}
 		
 		cost = 25
@@ -157,18 +131,18 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Cheyenne = {
+ 	SIX_decision_integrate_Cheyenne = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 381 }
+		SIX = { owns_state = 381 }
 		}
 		
 		cost = 25
@@ -183,24 +157,24 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Crow = {
+ 	SIX_decision_integrate_Crow = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 884 }
+		SIX = { owns_state = 884 }
 		}
 		
 		cost = 25
 		days_remove = 30
 		complete_effect {
-			add_state_core = 884
+			add_state_core = 884	
 		}	
 		fire_only_once = yes
 		
@@ -209,53 +183,83 @@ category_territorial_integration = {
 		}
 	}
 	
- 	APH_decision_integrate_Osage = {
+ 	SIX_decision_integrate_Shoshone = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 382 }
+		SIX = { owns_state = 876 }
+		}
+		
+		cost = 25
+		days_remove = 30
+		complete_effect {
+			add_state_core = 876	
+		}	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+ 	SIX_decision_integrate_Aprpaho = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = SIX
+		}
+
+		visible = {
+		}
+		available = {
+		SIX = { owns_state = 875 } 
+                SIX = { owns_state = 874 }
                 }
 		
 		
 		cost = 25
 		days_remove = 30
 		complete_effect {
-			add_state_core = 382 
-		}	
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
- 	APH_decision_integrate_Arapaho = {
-	
-		icon = generic_nationalism
-		
-		allowed = {
-			original_tag = APH
-		}
-
-		visible = {
-		}
-		available = {
-		APH = { owns_state = 875 } 
-                APH = { owns_state = 874 } 
-		}
-		
-		cost = 25
-		days_remove = 30
-		complete_effect {
 			add_state_core = 875
-			add_state_core = 874
+			add_state_core = 874	
+		}	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+ 	SIX_decision_integrate_Comancheria = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = SIX
+		}
+
+		visible = {
+		}
+		available = {
+		SIX = { owns_state = 873 } 
+                SIX = { owns_state = 871 } 
+                SIX = { owns_state = 872 }
+		}
+		
+		cost = 25
+		days_remove = 30
+		complete_effect {
+			add_state_core = 873
+			add_state_core = 871
+			add_state_core = 872	
 		}	
 		fire_only_once = yes
 		
@@ -264,24 +268,24 @@ category_territorial_integration = {
 		}
 	}
 
- 	APH_decision_integrate_Shoshone = {
+ 	SIX_decision_integrate_Osage = {
 	
 		icon = generic_nationalism
 		
 		allowed = {
-			original_tag = APH
+			original_tag = SIX
 		}
 
 		visible = {
 		}
 		available = {
-		APH = { owns_state = 876 }
+		SIX = { owns_state = 382 }
 		}
 		
 		cost = 25
 		days_remove = 30
 		complete_effect {
-			add_state_core = 876
+			add_state_core = 382 
 		}	
 		fire_only_once = yes
 		
