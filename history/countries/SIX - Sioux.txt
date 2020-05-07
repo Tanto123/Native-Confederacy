@@ -6,6 +6,7 @@ set_research_slots = 1
 
 set_technology = {
 	melee_equipment_0 = 1
+	musket_equipment_0 = 1
 }
 
 set_politics = {
