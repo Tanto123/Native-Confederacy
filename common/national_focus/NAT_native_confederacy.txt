@@ -1,0 +1,636 @@
+focus_tree = {
+	id = native_confederacy
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NAT
+		}
+	}
+	#Focus for Abandon Nomadic Ways
+	focus = {
+		id = NAT_abandon_nomadic_ways
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_question_tribal_authority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Question Tribal Authority
+	focus = {
+		id = NAT_question_tribal_authority
+		icon = GFX_goal_unknown
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_regulating_our_society }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mexican Jesuits
+	focus = {
+		id = NAT_mexican_jesuits
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_deal_with_europeans }
+		mutually_exclusive = { focus = NAT_french_fur_traders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Friendship
+	focus = {
+		id = NAT_friendship
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_trading_relations }
+		mutually_exclusive = { focus = NAT_push_them_out }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Push them out
+	focus = {
+		id = NAT_push_them_out
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_trading_relations }
+		mutually_exclusive = { focus = NAT_friendship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Western Expansion
+	focus = {
+		id = NAT_western_expansion
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_establishing_trade_links }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Resettling The Conquered
+	focus = {
+		id = NAT_resettling_the_conquered
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_march_north 
+		}
+		prerequisite = { 
+			focus = NAT_march_to_the_coast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Building A Merchant Fleet
+	focus = {
+		id = NAT_building_a_merchant_fleet
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Naval Advisers
+	focus = {
+		id = NAT_invite_naval_advisers
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_building_a_merchant_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ship of the Line
+	focus = {
+		id = NAT_ship_of_the_line
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_building_a_merchant_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Naval Fleet
+	focus = {
+		id = NAT_a_naval_fleet
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_invite_naval_advisers 
+		}
+		prerequisite = { 
+			focus = NAT_ship_of_the_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establishing Governance
+	focus = {
+		id = NAT_establishing_governance
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_societal_issues }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Regulating our Society
+	focus = {
+		id = NAT_regulating_our_society
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_societal_issues }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Centralized Government
+	focus = {
+		id = NAT_a_centralized_government
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_establishing_governance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Leave the Tribes be
+	focus = {
+		id = NAT_leave_the_tribes_be
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_question_tribal_authority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Land Reform
+	focus = {
+		id = NAT_land_reform
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_farming_subsides 
+			focus = NAT_first_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Study Foreign Cannons
+	focus = {
+		id = NAT_study_foreign_cannons
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_modernize_the_military }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Study Foreign Muskets
+	focus = {
+		id = NAT_study_foreign_muskets
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_study_foreign_cannons }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Send Warriors abroad
+	focus = {
+		id = NAT_send_warriors_abroad
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_modernize_the_military }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Produce Fine Officers
+	focus = {
+		id = NAT_produce_fine_officers
+		icon = GFX_goal_unknown
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_send_warriors_abroad }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Agricultural Lifestyle
+	focus = {
+		id = NAT_agricultural_lifestyle
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_farming_subsides }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal with Europeans
+	focus = {
+		id = NAT_deal_with_europeans
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_establishing_trade_links }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infrastructure
+	focus = {
+		id = NAT_infrastructure
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for First Factories
+	focus = {
+		id = NAT_first_factories
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_inviting_industrialists }
+		mutually_exclusive = { focus = NAT_farming_subsides }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rise of Industry
+	focus = {
+		id = NAT_rise_of_industry
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_first_factories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tactics of the Europeans
+	focus = {
+		id = NAT_tactics_of_the_europeans
+		icon = GFX_goal_unknown
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_train_our_generals }
+		mutually_exclusive = { focus = NAT_tactics_of_our_fathers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tactics of our Fathers
+	focus = {
+		id = NAT_tactics_of_our_fathers
+		icon = GFX_goal_unknown
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_train_our_generals }
+		mutually_exclusive = { focus = NAT_tactics_of_the_europeans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialization
+	focus = {
+		id = NAT_industrialization
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_a_new_era }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Societal Issues
+	focus = {
+		id = NAT_societal_issues
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_a_new_era }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Messenger Posts
+	focus = {
+		id = NAT_messenger_posts
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for French Fur Traders
+	focus = {
+		id = NAT_french_fur_traders
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_deal_with_europeans }
+		mutually_exclusive = { focus = NAT_mexican_jesuits }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establishing Trade Links
+	focus = {
+		id = NAT_establishing_trade_links
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_a_new_era }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Era
+	focus = {
+		id = NAT_a_new_era
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Farming Subsides
+	focus = {
+		id = NAT_farming_subsides
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_messenger_posts }
+		mutually_exclusive = { focus = NAT_first_factories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inviting Industrialists
+	focus = {
+		id = NAT_inviting_industrialists
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_industrialization 
+		}
+		prerequisite = { 
+			focus = NAT_establishing_trade_links 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Trading Relations
+	focus = {
+		id = NAT_trading_relations
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_mexican_jesuits 
+		}
+		prerequisite = { 
+			focus = NAT_french_fur_traders 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for March North
+	focus = {
+		id = NAT_march_north
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_western_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for March to the Coast
+	focus = {
+		id = NAT_march_to_the_coast
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_western_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modernize the Military
+	focus = {
+		id = NAT_modernize_the_military
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_a_new_era }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Own Military Academy
+	focus = {
+		id = NAT_our_own_military_academy
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAT_study_foreign_muskets
+			focus = NAT_produce_fine_officers
+			focus = NAT_tactics_of_our_fathers
+		}
+		prerequisite = { 
+			focus = NAT_tactics_of_the_europeans
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Train our Generals
+	focus = {
+		id = NAT_train_our_generals
+		icon = GFX_goal_unknown
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_modernize_the_military }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Move Towards A Decentralize Government
+	focus = {
+		id = NAT_move_towards_a_decentralize_government
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAT_establishing_governance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

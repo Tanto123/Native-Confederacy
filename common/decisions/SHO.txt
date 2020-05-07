@@ -61,10 +61,10 @@ category_territorial_integration = {
 		}
 
 		visible = {
-			NOT = { owns_state = 894 }
+			NOT = { owns_state = 389 }
 		}
 		available = {
-		SHO = { owns_state = 894 }
+		SHO = { owns_state = 389 }
 		}
 		
 		cost = 25

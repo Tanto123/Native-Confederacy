@@ -1,3 +1,15 @@
 category_territorial_integration = {
 	icon = border_war
 }
+
+form_native_confederacy_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_united_britain
+}
+
+move_on_category = {
+
+	icon = generic_formable_nations
+}

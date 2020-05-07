@@ -1,0 +1,10 @@
+division_template = {
+	name = "Raiding Band"
+
+	division_names_group = SIX_ARM_01
+
+	regiments = {
+		melee_battalion = { x = 0 y = 0 }
+	}
+	priority = 1
+}

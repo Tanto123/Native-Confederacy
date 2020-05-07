@@ -252,3 +252,9 @@
  decision_integrate_Comancheria_desc:0 "We shall intergrate this fellow tribe"
  decision_integrate_Osage:0 "Intergration of the Osage tribe"
  decision_integrate_Osage_desc:0 "We shall intergrate this fellow tribe"
+ 
+ form_native_confederacy:0 "Unite the Tribes"
+ form_native_confederacy_category:0 "The Confederacy"
+ form_native_confederacy_category_desc:0 ""
+ 
+ form_country_native_required_states_tt:0 "Controls the Eastern Plains, from the Sioux to the Comancheria (anyone who has the Plains Nations focus tree is needed)"

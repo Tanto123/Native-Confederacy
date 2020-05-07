@@ -1,0 +1,46 @@
+﻿capital = 389
+
+oob = "SIX_1886"
+
+set_research_slots = 1
+
+set_technology = {
+	melee_equipment_0 = 1
+}
+
+set_politics = {
+	ruling_party = tribal_confederation 
+	elections_allowed = no
+}
+set_popularities = {
+	tribal_confederation  = 100
+}
+
+set_stability = 0.50
+
+add_manpower = 550
+
+add_to_array = { ideology_popularities_array = 0.00 } # Nationalism
+add_to_array = { ideology_popularities_array = 1 } # Monarchism
+add_to_array = { ideology_popularities_array = 0.00 } # Conservatism
+add_to_array = { ideology_popularities_array = 0.00 } # Liberalism
+add_to_array = { ideology_popularities_array = 0.00 } # Progressivism
+add_to_array = { ideology_popularities_array = 0.00 } # Socialism
+add_to_array = { ideology_popularities_array = 0.00 } # liberalism
+add_to_array = { ideology_popularities_array = 0.00 } # Anarchism
+
+set_variable = { despotism_ruling_party = 1 }
+
+add_to_array = { national_religion_array =  22 }
+
+create_country_leader = {
+	name = "Wamblee"
+	picture = "gfx/leaders/NorthAmerica/Portrait_Generic_North_America4.dds"
+	
+	#desc = ""
+	ideology = tribal_confederation 
+	expire = "1999.1.1"
+	traits = {
+		#
+	}
+}

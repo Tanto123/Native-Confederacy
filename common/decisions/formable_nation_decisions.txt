@@ -1,0 +1,502 @@
+form_united_kingdom_category = {
+	
+	form_united_kingdom = {
+
+		icon = generic_form_nation
+
+		available = {
+			# Ireland
+			custom_trigger_tooltip = {
+				tooltip = form_country_ireland_required_states_tt
+				controls_state = 113
+				controls_state = 134
+				controls_state = 135
+			}
+			# Scotland
+			custom_trigger_tooltip = {
+				tooltip = form_country_scotland_required_states_tt
+				controls_state = 119
+				controls_state = 120
+				controls_state = 121
+				controls_state = 133
+				controls_state = 136
+				controls_state = 794
+			}
+			# England
+			custom_trigger_tooltip = {
+				tooltip = form_country_england_required_states_tt
+				controls_state = 122
+				controls_state = 123
+				controls_state = 125
+				controls_state = 126
+				controls_state = 127
+				controls_state = 128
+				controls_state = 129
+				controls_state = 130
+				controls_state = 131
+				controls_state = 132
+				controls_state = 338
+			}
+		}
+
+		visible = {
+            		OR = {
+                		original_tag = IRE
+                		original_tag = SCO
+                		original_tag = ENG
+            		}
+            		NOT = { has_global_flag = form_united_kingdom_flag }
+        	}
+
+		complete_effect = {
+			set_cosmetic_tag = UNK_UNIFIED
+            		hidden_effect = {
+                		set_global_flag = form_united_kingdom_flag
+            		}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+form_italy_category = {
+	
+	form_italy = {
+
+		icon = generic_form_nation
+
+		available = {
+			# Savoy
+			custom_trigger_tooltip = {
+				tooltip = form_country_savoy_required_states_tt
+				controls_state = 158
+			}
+			# Milan
+			custom_trigger_tooltip = {
+				tooltip = form_country_milan_required_states_tt
+				controls_state = 159
+			}
+			# Tuscany
+			custom_trigger_tooltip = {
+				tooltip = form_country_tuscany_required_states_tt
+				controls_state = 161
+				controls_state = 162
+			}
+			# Papal States
+			custom_trigger_tooltip = {
+				tooltip = form_country_papal_required_states_tt
+				controls_state = 157
+				controls_state = 2
+			}
+			# Venice
+			custom_trigger_tooltip = {
+				tooltip = form_country_venice_required_states_tt
+				controls_state = 797
+				controls_state = 160
+			}
+			# Genoa
+			custom_trigger_tooltip = {
+				tooltip = form_country_genoa_required_states_tt
+				controls_state = 795
+			}
+			# Naples
+			custom_trigger_tooltip = {
+				tooltip = form_country_naples_required_states_tt
+				controls_state = 115
+				controls_state = 117
+				controls_state = 117
+				controls_state = 798
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = PIE
+				original_tag = MIL
+				original_tag = VNC
+				original_tag = GEN
+				original_tag = TUS
+				original_tag = PAP
+				original_tag = NAP
+			}
+			NOT = { has_global_flag = form_italy_flag }
+		}
+
+		complete_effect = {
+			add_stability = 0.10
+			set_cosmetic_tag = ITA_UNIFIED
+			hidden_effect = {
+				set_global_flag = form_italy_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+form_germany_category = {
+	
+	form_germany = {
+
+		icon = generic_form_nation
+
+		available = {
+			# Bradenburg
+			custom_trigger_tooltip = {
+				tooltip = form_country_bradenburg_required_states_tt
+				controls_state = 62
+				controls_state = 63
+				controls_state = 64
+				controls_state = 68
+				controls_state = 805
+			}
+			# Saxony
+			custom_trigger_tooltip = {
+				tooltip = form_country_saxony_required_states_tt
+				controls_state = 65
+			}
+			# Thuringia
+			custom_trigger_tooltip = {
+				tooltip = form_country_thuringia_required_states_tt
+				controls_state = 60
+			}
+			# Mecklenburg
+			custom_trigger_tooltip = {
+				tooltip = form_country_mecklenburg_required_states_tt
+				controls_state = 61
+			}
+			# Lubeck
+			custom_trigger_tooltip = {
+				tooltip = form_country_lubeck_required_states_tt
+				controls_state = 790
+			}
+			# Schleswig-Holstein
+			custom_trigger_tooltip = {
+				tooltip = form_country_holstein_required_states_tt
+				controls_state = 58
+			}
+			# Hamburg
+			custom_trigger_tooltip = {
+				tooltip = form_country_hamburg_required_states_tt
+				controls_state = 789
+			}
+			# Hannover
+			custom_trigger_tooltip = {
+				tooltip = form_country_hannover_required_states_tt
+				controls_state = 59
+				controls_state = 852
+			}
+			# Bremen
+			custom_trigger_tooltip = {
+				tooltip = form_country_bremen_required_states_tt
+				controls_state = 851
+			}
+			# Oldenburg
+			custom_trigger_tooltip = {
+				tooltip = form_country_oldenburg_required_states_tt
+				controls_state = 833
+			}
+			# Munster
+			custom_trigger_tooltip = {
+				tooltip = form_country_munster_required_states_tt
+				controls_state = 56
+			}
+			# Kleve
+			custom_trigger_tooltip = {
+				tooltip = form_country_kleve_required_states_tt
+				controls_state = 836
+				controls_state = 850
+			}
+			# Dortmund
+			custom_trigger_tooltip = {
+				tooltip = form_country_dortmund_required_states_tt
+				controls_state = 853
+			}
+			# Mark
+			custom_trigger_tooltip = {
+				tooltip = form_country_mark_required_states_tt
+				controls_state = 854
+			}
+			# Kassel
+			custom_trigger_tooltip = {
+				tooltip = form_country_kassel_required_states_tt
+				controls_state = 55
+			}
+			# Nassau
+			custom_trigger_tooltip = {
+				tooltip = form_country_nassau_required_states_tt
+				controls_state = 855
+			}
+			# Julich
+			custom_trigger_tooltip = {
+				tooltip = form_country_julich_required_states_tt
+				controls_state = 51
+				controls_state = 42
+			}
+			# Cologne
+			custom_trigger_tooltip = {
+				tooltip = form_country_cologne_required_states_tt
+				controls_state = 844
+			}
+			# Trier
+			custom_trigger_tooltip = {
+				tooltip = form_country_trier_required_states_tt
+				controls_state = 808
+			}
+			# Frankfurt
+			custom_trigger_tooltip = {
+				tooltip = form_country_frankfurt_required_states_tt
+				controls_state = 849
+			}
+			# Wurzburg
+			custom_trigger_tooltip = {
+				tooltip = form_country_wurzburg_required_states_tt
+				controls_state = 54
+			}
+			# Ansbach
+			custom_trigger_tooltip = {
+				tooltip = form_country_ansbach_required_states_tt
+				controls_state = 819
+				controls_state = 820
+			}
+			# Nuremberg
+			custom_trigger_tooltip = {
+				tooltip = form_country_nuremberg_required_states_tt
+				controls_state = 818
+			}
+			# Baden
+			custom_trigger_tooltip = {
+				tooltip = form_country_baden_required_states_tt
+				controls_state = 814
+			}
+			# Wurttemberg
+			custom_trigger_tooltip = {
+				tooltip = form_country_wurttemberg_required_states_tt
+				controls_state = 817
+			}
+			# ULM
+			custom_trigger_tooltip = {
+				tooltip = form_country_ulm_required_states_tt
+				controls_state = 57
+			}
+			# Bavaria
+			custom_trigger_tooltip = {
+				tooltip = form_country_bavaria_required_states_tt
+				controls_state = 52
+				controls_state = 53
+				controls_state = 807
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = PRS
+				original_tag = BRD
+				original_tag = SAX
+				original_tag = THU
+				original_tag = MCK
+				original_tag = LBK
+				original_tag = SCH
+				original_tag = HAM
+				original_tag = HAN
+				original_tag = BRE
+				original_tag = OLD
+				original_tag = MUN
+				original_tag = KLE
+				original_tag = DOR
+				original_tag = MRK
+				original_tag = KSS
+				original_tag = NSS
+				original_tag = JUL
+				original_tag = KOL
+				original_tag = TRI
+				original_tag = FRK
+				original_tag = WRZ
+				original_tag = ANB
+				original_tag = NUR
+				original_tag = BAD
+				original_tag = WUR
+				original_tag = ULM
+				original_tag = BAV
+				original_tag = AUS
+			}
+			NOT = { has_global_flag = form_germany_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GER_UNIFIED
+			hidden_effect = {
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					add_stability = -0.20
+				}
+				set_global_flag = form_germany_flag
+				add_stability = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+form_romania_category = {
+	
+	form_romania = {
+
+		icon = generic_form_nation
+
+		available = {
+			# Wallachia
+			custom_trigger_tooltip = {
+				tooltip = form_country_wallachia_required_states_tt
+				controls_state = 46
+				controls_state = 81
+			}
+			# Moldavia
+			custom_trigger_tooltip = {
+				tooltip = form_country_moldavia_required_states_tt
+				controls_state = 78
+				controls_state = 79
+				controls_state = 80
+				controls_state = 766
+			}
+		}
+
+		visible = {
+            		OR = {
+                		original_tag = ROM
+                		original_tag = MOL
+            		}
+            		NOT = { has_global_flag = form_romania_flag }
+        	}
+
+		complete_effect = {
+			set_cosmetic_tag = ROM_UNIFIED
+            		hidden_effect = {
+                		set_global_flag = form_romania_flag
+            		}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+form_scandinavia_category = {
+	
+	form_scandinavia = {
+
+		icon = generic_form_nation
+
+		available = {
+			# Norway
+			custom_trigger_tooltip = {
+				tooltip = form_country_norway_required_states_tt
+				controls_state = 110
+				controls_state = 142
+				controls_state = 144
+			}
+			# Denmark
+			custom_trigger_tooltip = {
+				tooltip = form_country_denmark_required_states_tt
+				controls_state = 37
+				controls_state = 99
+				controls_state = 806
+			}
+			# Sweden
+			custom_trigger_tooltip = {
+				tooltip = form_country_sweden_required_states_tt
+				controls_state = 38
+				controls_state = 111
+				controls_state = 138
+				controls_state = 139
+				controls_state = 140
+				controls_state = 141
+				controls_state = 143
+				controls_state = 146
+				controls_state = 147
+				controls_state = 148
+				controls_state = 149
+				controls_state = 150
+				controls_state = 213
+				controls_state = 215
+				controls_state = 666
+				controls_state = 722
+			}
+		}
+
+		visible = {
+            		OR = {
+                		original_tag = NOR
+                		original_tag = DEN
+                		original_tag = SWE
+            		}
+            		NOT = { has_global_flag =  form_scandinavia_flag }
+        	}
+
+		complete_effect = {
+			set_cosmetic_tag = SCA_UNIFIED
+            		hidden_effect = {
+                		set_global_flag = form_scandinavia_flag
+            		}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+form_native_confederacy_category = {
+	
+	form_native_confederacy = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_country_native_required_states_tt
+				controls_state = 389
+				controls_state = 391
+				controls_state = 390
+				controls_state = 892
+				controls_state = 893
+				controls_state = 894
+				controls_state = 884
+				controls_state = 381
+				controls_state = 382
+				controls_state = 876
+				controls_state = 875
+				controls_state = 874
+				controls_state = 873
+				controls_state = 871
+				controls_state = 872
+			}
+		}
+
+		visible = {
+            		OR = {
+                		original_tag = SIX
+            		}
+            		NOT = { has_global_flag = form_confederacy_flag }
+        	}
+
+		complete_effect = {
+			set_cosmetic_tag = NAC_UNIFIED
+                        load_focus_tree = native_confederacy
+            		hidden_effect = {
+                	set_global_flag = form_confederacy_flag
+		        }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
