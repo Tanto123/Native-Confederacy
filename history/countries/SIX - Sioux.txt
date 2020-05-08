@@ -5,8 +5,8 @@ oob = "SIX_1886"
 set_research_slots = 1
 
 set_technology = {
-	melee_equipment_0 = 1
-	musket_equipment_0 = 1
+	muskets0 = 1
+	melee = 1
 }
 
 set_politics = {

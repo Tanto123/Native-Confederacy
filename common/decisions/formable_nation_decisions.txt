@@ -482,6 +482,17 @@ form_native_confederacy_category = {
 		visible = {
             		OR = {
                 		original_tag = SIX
+                		original_tag = PWN
+                		original_tag = CHY
+                		original_tag = CRW
+                		original_tag = HTS
+                		original_tag = OJB
+                		original_tag = OSG
+                		original_tag = PAW
+                		original_tag = SHO
+                		original_tag = SLT
+                		original_tag = SRC
+                		original_tag = APH
             		}
             		NOT = { has_global_flag = form_confederacy_flag }
         	}
