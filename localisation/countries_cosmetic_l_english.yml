@@ -239,6 +239,6 @@
  SCA_UNIFIED_colonial_ADJ:0 "Scandinavian"
  SCA_UNIFIED_tribal_confederation_ADJ:0 "Norse"
 
- NAC_UNIFIED_tribal_confederation:0 "Federation of the Great Plain Tribes"
- NAC_UNIFIED_tribal_confederation_DEF:0 "The Federation of the Great Plain Tribes"
+ NAC_UNIFIED_tribal_confederation:0 "Confederation of the Great Plain Tribes"
+ NAC_UNIFIED_tribal_confederation_DEF:0 "The Confederation of the Great Plain Tribes"
  NAC_UNIFIED_tribal_confederation_ADJ:0 "Indians"

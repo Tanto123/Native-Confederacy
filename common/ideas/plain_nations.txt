@@ -99,4 +99,116 @@ ideas = {
                                 war_support_factor = 0.05
 
 			}
+		}	
+
+
+
+
+
+		tribal_living = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = 0.05
+                                min_export = -0.05
+			}
+		}	
+
+		big_government = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = -0.05
+                                political_power_factor = -0.25
+                                army_org = 5
+                                war_support_factor = 0.05
+
+			}
+		}	
+
+		confederacy = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = 0.05
+                                political_power_factor = 0.25
+                                army_org = -5
+                                war_support_factor = -0.05
+                                local_building_slots_factor = -0.25
+
+			}
 		}			
+
+		agricultural_living = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                MONTHLY_POPULATION = 0.40
+                                consumer_goods_factor = -0.1
+
+			}
+		}
+
+		messenger_posts = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = 0.05
+                                recon_factor = 0.05
+
+			}
+		}	
+	
+		european_tactics = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                planning_speed = 0.10
+                                army_org = 5
+                                conscription = 0.02
+                                training_time_factor = -0.1
+
+			}
+		}	
+		fathers_ways = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                army_speed_factor = 0.05
+                                attrition = -0.1
+                                partisan_effect = 0.1
+                                recon_factor = 0.05
+                                army_attack_factor = 0.1
+
+			}
+		}	
+
+		rise_of_industry = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = -0.05
+                                production_speed_buildings_factor = 0.15
+                                local_resources_factor = 0.10
+
+			}
+		}	
+
+		naval_fleet = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                production_speed_dockyard_factor = 0.25
+                                min_export = -0.05
+                                industrial_capacity_dockyard = 0.25
+			}
+		}	

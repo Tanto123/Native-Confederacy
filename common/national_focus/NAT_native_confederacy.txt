@@ -11,27 +11,41 @@ focus_tree = {
 	focus = {
 		id = NAT_abandon_nomadic_ways
 		icon = GFX_goal_unknown
-		x = 20
+		x = 18
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_question_tribal_authority }
+		prerequisite = { focus = NAT_encroaching_on_tribal_authority }
+		mutually_exclusive = { focus = NAT_leave_the_tribes_be }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_research_slot = 1
+
+remove_ideas = tribal_living
+		}
 	}
 
-	#Focus for Question Tribal Authority
+	#Focus for Encroaching on Tribal Authority
 	focus = {
-		id = NAT_question_tribal_authority
+		id = NAT_encroaching_on_tribal_authority
 		icon = GFX_goal_unknown
-		x = 21
+		x = 20
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_regulating_our_society }
+		prerequisite = { 
+			focus = NAT_establishing_governance 
+		}
+		prerequisite = { 
+			focus = NAT_regulating_our_society 
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 1000
 		}
 	}
 
@@ -86,11 +100,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = NAT_establishing_trade_links }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
 		}
 	}
 
@@ -121,9 +138,30 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_infrastructure }
+		prerequisite = { focus = NAT_paving_new_roads }
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			is_coastal= yes
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
 		}
 	}
 
@@ -139,6 +177,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			navy_experience= 45
+
+add_tech_bonus = {
+bonus = 0.5
+uses = 2
+category = naval_doctrine
+			}
+		}
 	}
 
 	#Focus for Ship of the Line
@@ -152,6 +199,13 @@ focus_tree = {
 		prerequisite = { focus = NAT_building_a_merchant_fleet }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.35
+uses = 2
+category = naval_equipment
+			}
 		}
 	}
 
@@ -172,19 +226,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = naval_fleet
+		}
 	}
 
 	#Focus for Establishing Governance
 	focus = {
 		id = NAT_establishing_governance
 		icon = GFX_goal_unknown
-		x = 18
+		x = 19
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NAT_societal_issues }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
 		}
 	}
 
@@ -200,19 +260,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability= 0.05
+		}
 	}
 
-	#Focus for A Centralized Government
+	#Focus for Centralization of Power
 	focus = {
-		id = NAT_a_centralized_government
+		id = NAT_centralization_of_power
 		icon = GFX_goal_unknown
-		x = 17
-		y = 4
+		x = 18
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_establishing_governance }
+		prerequisite = { focus = NAT_abandon_nomadic_ways }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = republic 
+elections_allowed = no 
+}
 		}
 	}
 
@@ -224,9 +293,13 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_question_tribal_authority }
+		prerequisite = { focus = NAT_encroaching_on_tribal_authority }
+		mutually_exclusive = { focus = NAT_abandon_nomadic_ways }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
 		}
 	}
 
@@ -245,6 +318,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 
 	#Focus for Study Foreign Cannons
@@ -258,6 +334,14 @@ focus_tree = {
 		prerequisite = { focus = NAT_modernize_the_military }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = artillery_bonus
+bonus = 0.5
+uses = 1
+category = artillery
+			}
 		}
 	}
 
@@ -273,6 +357,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 1
+uses = 1
+technology = muskets1
+technology = muskets2
+technology = muskets3
+technology = rifles
+			}
+		}
 	}
 
 	#Focus for Send Warriors abroad
@@ -286,6 +380,14 @@ focus_tree = {
 		prerequisite = { focus = NAT_modernize_the_military }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 2
+category = land_doctrine
+			}
 		}
 	}
 
@@ -301,6 +403,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			army_experience= 25
+		}
 	}
 
 	#Focus for Agricultural Lifestyle
@@ -314,6 +419,9 @@ focus_tree = {
 		prerequisite = { focus = NAT_farming_subsides }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = agricultural_living
 		}
 	}
 
@@ -331,9 +439,9 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Infrastructure
+	#Focus for Paving New Roads
 	focus = {
-		id = NAT_infrastructure
+		id = NAT_paving_new_roads
 		icon = GFX_goal_unknown
 		x = 14
 		y = 3
@@ -342,6 +450,62 @@ focus_tree = {
 		prerequisite = { focus = NAT_industrialization }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -358,6 +522,38 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Focus for Rise of Industry
@@ -372,11 +568,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = rise_of_industry
+		}
 	}
 
-	#Focus for Tactics of the Europeans
+	#Focus for The European Model
 	focus = {
-		id = NAT_tactics_of_the_europeans
+		id = NAT_the_european_model
 		icon = GFX_goal_unknown
 		x = 28
 		y = 4
@@ -386,6 +585,9 @@ focus_tree = {
 		mutually_exclusive = { focus = NAT_tactics_of_our_fathers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = european_tactics
 		}
 	}
 
@@ -398,9 +600,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NAT_train_our_generals }
-		mutually_exclusive = { focus = NAT_tactics_of_the_europeans }
+		mutually_exclusive = { focus = NAT_the_european_model }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = fathers_ways
 		}
 	}
 
@@ -410,11 +615,21 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_a_new_era }
+		prerequisite = { focus = NAT_the_confederacy_of_the_plains_nations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05
+
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 0.5
+uses = 1
+category = industry
+			}
 		}
 	}
 
@@ -424,11 +639,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_a_new_era }
+		prerequisite = { focus = NAT_the_confederacy_of_the_plains_nations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
@@ -443,6 +661,9 @@ focus_tree = {
 		prerequisite = { focus = NAT_industrialization }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = messenger_posts
 		}
 	}
 
@@ -467,24 +688,32 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_a_new_era }
+		prerequisite = { focus = NAT_the_confederacy_of_the_plains_nations }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power= 50
+		}
 	}
 
-	#Focus for A New Era
+	#Focus for The Confederacy of the Plains Nations
 	focus = {
-		id = NAT_a_new_era
+		id = NAT_the_confederacy_of_the_plains_nations
 		icon = GFX_goal_unknown
 		x = 13
 		y = 1
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+
+add_ideas = tribal_living
 		}
 	}
 
@@ -494,12 +723,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = NAT_messenger_posts }
 		mutually_exclusive = { focus = NAT_first_factories }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
 		}
 	}
 
@@ -519,6 +751,38 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -575,11 +839,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_a_new_era }
+		prerequisite = { focus = NAT_the_confederacy_of_the_plains_nations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience= 15
 		}
 	}
 
@@ -597,10 +864,13 @@ focus_tree = {
 			focus = NAT_tactics_of_our_fathers
 		}
 		prerequisite = { 
-			focus = NAT_tactics_of_the_europeans
+			focus = NAT_the_european_model
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -616,19 +886,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+name = land_doc_bonus
+bonus = 0.5
+uses = 1
+category = land_doctrine
+			}
+		}
 	}
 
-	#Focus for Move Towards A Decentralize Government
+	#Focus for A Confederation
 	focus = {
-		id = NAT_move_towards_a_decentralize_government
+		id = NAT_a_confederation
 		icon = GFX_goal_unknown
-		x = 19
-		y = 4
+		x = 22
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NAT_establishing_governance }
+		prerequisite = { focus = NAT_leave_the_tribes_be }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = confederacy
 		}
 	}
 
