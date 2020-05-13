@@ -26,6 +26,10 @@ spriteTypes = {
  }##Icon For: 1790281
  SpriteType = { 
  name = "GFX_intertribalpolitics" 
- texturefile = "gfx/interface/goals/GFX_intertribalpolitics.tga" 
+ texturefile = "gfx/interface/goals/GFX_intertribalpolitics.tga"
+ } 
+  SpriteType = { 
+ name = "GFX_mexican_jesuits" 
+ texturefile = "gfx/interface/goals/GFX_mexican_jesuits.tga"
  } 
  }

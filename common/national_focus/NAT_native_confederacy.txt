@@ -52,7 +52,7 @@ remove_ideas = tribal_living
 	#Focus for Mexican Jesuits
 	focus = {
 		id = NAT_mexican_jesuits
-		icon = GFX_goal_unknown
+		icon = GFX_mexican_jesuits
 		x = 4
 		y = 4
 		cost = 10
@@ -712,8 +712,6 @@ category = industry
 		}
 		completion_reward = {
 			add_political_power= 50
-
-add_ideas = tribal_living
 		}
 	}
 

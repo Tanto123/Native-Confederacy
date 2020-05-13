@@ -1,12 +1,11 @@
-﻿capital = 389
+﻿capital = 391 
 
-oob = "SIX_1886"
+oob = "OJB_1886"
 
 set_research_slots = 1
 
 set_technology = {
 	muskets0 = 1
-	melee = 1
 }
 
 set_politics = {
@@ -19,10 +18,6 @@ set_popularities = {
 add_ideas = {
 tribal_living
 }
-
-set_stability = 0.50
-
-add_manpower = 550
 
 add_to_array = { ideology_popularities_array = 0.00 } # Nationalism
 add_to_array = { ideology_popularities_array = 1 } # Monarchism
@@ -37,9 +32,11 @@ set_variable = { despotism_ruling_party = 1 }
 
 add_to_array = { national_religion_array =  22 }
 
+set_stability = 0.46
+
 create_country_leader = {
-	name = "Wamblee"
-	picture = "gfx/leaders/NorthAmerica/Portrait_Generic_North_America4.dds"
+	name = "Hok'Ee"
+	picture = "gfx/leaders/NorthAmerica/Portrait_Generic_North_America2.dds"
 	
 	#desc = ""
 	ideology = tribal_confederation 
@@ -48,3 +45,4 @@ create_country_leader = {
 		#
 	}
 }
+

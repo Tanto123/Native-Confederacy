@@ -242,3 +242,7 @@
  NAC_UNIFIED_tribal_confederation:0 "Confederation of the Great Plain Tribes"
  NAC_UNIFIED_tribal_confederation_DEF:0 "The Confederation of the Great Plain Tribes"
  NAC_UNIFIED_tribal_confederation_ADJ:0 "Indians"
+
+ NAC_UNIFIED_republic:0 "Republic of the Plains"
+ NAC_UNIFIED_republic_DEF:0 "the Republic of the Plains"
+ NAC_UNIFIED_republic_ADJ:0 "Indians"

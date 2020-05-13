@@ -493,6 +493,7 @@ form_native_confederacy_category = {
                 		original_tag = SLT
                 		original_tag = SRC
                 		original_tag = APH
+                		original_tag = CCH
             		}
             		NOT = { has_global_flag = form_confederacy_flag }
         	}

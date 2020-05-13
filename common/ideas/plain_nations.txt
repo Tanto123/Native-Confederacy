@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		centralized_military = {
-			picture = vittoria_mutilata
+			picture = generic_manpower_bonus
 			cost = -1
 			
 			modifier = {
@@ -11,7 +11,7 @@ ideas = {
 			}
 		}		
 		decentralized_military = {
-			picture = generic_fascism_drift_bonus
+			picture = chi_wargaming_division
 			cost = -1
 			
 			modifier = {
@@ -23,7 +23,7 @@ ideas = {
 			}
 		}		
 		horse = {
-			picture = generic_fascism_drift_bonus
+			picture = FRA_army_of_aggression_focus
 			cost = -1
 			
 			modifier = {
@@ -34,7 +34,7 @@ ideas = {
 			}
 		}		
 		hunter = {
-			picture = generic_fascism_drift_bonus
+			picture = mex_politicised_army2
 			cost = -1
 			
 			modifier = {
@@ -45,7 +45,7 @@ ideas = {
 			}
 		}		
 		united_brothers = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_morale_bonus
 			cost = -1
 			
 			rule = {
@@ -58,7 +58,7 @@ ideas = {
 			}
 		}		
 		war_path = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_purge
 			cost = -1
 			
 			modifier = {
@@ -69,7 +69,7 @@ ideas = {
 			}
 		}		
 		gathering = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_flexible_foreign_policy2
 			cost = -1
 			
 			modifier = {
@@ -79,7 +79,7 @@ ideas = {
 			}
 		}		
 		one_nation = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_volunteer_expedition_bonus
 			cost = -1
 			
 			modifier = {
@@ -90,7 +90,7 @@ ideas = {
 			}
 		}	
 		old_ways = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_army_problems
 			cost = -1
 			
 			modifier = {
@@ -106,17 +106,18 @@ ideas = {
 
 
 		tribal_living = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_agrarian_society
 			cost = -1
 			
 			modifier = {
-                                stability_factor = 0.05
-                                min_export = -0.05
+                                stability_factor = 0.1
+                                min_export = -0.35
+                                research_speed_factor = -0.35
 			}
 		}	
 
 		big_government = {
-			picture = generic_fascism_drift_bonus
+			picture = idea_generic_political_support
 			cost = -1
 			
 			modifier = {
@@ -129,7 +130,7 @@ ideas = {
 		}	
 
 		confederacy = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_morale_bonus
 			cost = -1
 			
 			modifier = {
@@ -143,7 +144,7 @@ ideas = {
 		}			
 
 		agricultural_living = {
-			picture = generic_fascism_drift_bonus
+			picture = idea_generic_agrarian_reform
 			cost = -1
 			
 			modifier = {
@@ -154,7 +155,7 @@ ideas = {
 		}
 
 		messenger_posts = {
-			picture = generic_fascism_drift_bonus
+			picture = idea_generic_secret_police
 			cost = -1
 			
 			modifier = {
@@ -165,7 +166,7 @@ ideas = {
 		}	
 	
 		european_tactics = {
-			picture = generic_fascism_drift_bonus
+			picture = idea_generic_army_war_college
 			cost = -1
 			
 			modifier = {
@@ -191,7 +192,7 @@ ideas = {
 		}	
 
 		rise_of_industry = {
-			picture = generic_fascism_drift_bonus
+			picture = generic_goods_red_bonus
 			cost = -1
 			
 			modifier = {
@@ -203,7 +204,7 @@ ideas = {
 		}	
 
 		naval_fleet = {
-			picture = generic_fascism_drift_bonus
+			picture = idea_eng_steady_as_she_goes
 			cost = -1
 			
 			modifier = {
